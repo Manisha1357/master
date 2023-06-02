@@ -1,0 +1,113 @@
+[
+	{
+		"line": 1,
+		"elements": [
+			{
+				"start_timestamp": "2023-05-27T12:41:52.166Z",
+				"before": [
+					{
+						"result": {
+							"duration": 4714498800,
+							"status": "passed"
+						},
+						"match": {
+							"location": "stepDefinations.Hooks.beforeScenario()"
+						}
+					}
+				],
+				"line": 18,
+				"name": "Verify if Delete place functionality is working",
+				"description": "",
+				"id": "validating-place-api-s;verify-if-delete-place-functionality-is-working",
+				"type": "scenario",
+				"keyword": "Scenario",
+				"steps": [
+					{
+						"result": {
+							"duration": 1999100,
+							"status": "passed"
+						},
+						"line": 20,
+						"name": "delete place API payload",
+						"match": {
+							"location": "stepDefinations.StepDefination.delete_place_api_payload()"
+						},
+						"keyword": "Given "
+					},
+					{
+						"result": {
+							"duration": 1161731500,
+							"status": "passed"
+						},
+						"line": 21,
+						"name": "user calls \"deletePlaceAPI\" with \"Post\" http request",
+						"match": {
+							"arguments": [
+								{
+									"val": "\"deletePlaceAPI\"",
+									"offset": 11
+								},
+								{
+									"val": "\"Post\"",
+									"offset": 33
+								}
+							],
+							"location": "stepDefinations.StepDefination.user_calls_with_post_http_request(java.lang.String,java.lang.String)"
+						},
+						"keyword": "When "
+					},
+					{
+						"result": {
+							"status": "passed"
+						},
+						"line": 22,
+						"name": "API call got success and status code is 200",
+						"match": {
+							"arguments": [
+								{
+									"val": "200",
+									"offset": 40
+								}
+							],
+							"location": "stepDefinations.StepDefination.api_call_got_success_and_status_code_is(java.lang.Integer)"
+						},
+						"keyword": "Then "
+					},
+					{
+						"result": {
+							"duration": 32962600,
+							"status": "passed"
+						},
+						"line": 23,
+						"name": "\"status\" in response body is \"OK\"",
+						"match": {
+							"arguments": [
+								{
+									"val": "\"status\"",
+									"offset": 0
+								},
+								{
+									"val": "\"OK\"",
+									"offset": 29
+								}
+							],
+							"location": "stepDefinations.StepDefination.in_response_body_is(java.lang.String,java.lang.String)"
+						},
+						"keyword": "And "
+					}
+				],
+				"tags": [
+					{
+						"name": "@DeletePlace"
+					}
+				]
+			}
+		],
+		"name": "Validating Place API's",
+		"description": "",
+		"id": "validating-place-api-s",
+		"keyword": "Feature",
+		"uri": "file:src/test/java/features/AddPlace.feature",
+		"tags": []
+	}
+]
